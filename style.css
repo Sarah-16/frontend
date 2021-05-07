@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "karla";
+  src: url("https://fonts.google.com/specimen/Karla");
+}
+body {
+  font-family: "karla", sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  display: flex;
+  padding: 4em 2em;
+}
+.sub_container {
+  background-color: white;
+  padding: 1rem 2rem;
+}
+.header {
+  color: hsl(179, 62%, 43%);
+}
+.paragraph_one {
+  color: hsl(71, 73%, 54%);
+}
+.paragraph_two {
+  color: hsl(218, 22%, 67%);
+}
+
+.cost {
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+}
+.figure {
+  font-size: 1.5em;
+}
+.text {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.705);
+}
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5em 6em;
+}
+.btn:hover {
+  background: hsl(204, 43%, 93%);
+  color: hsl(179, 62%, 43%);
+}
+.why_us {
+  background-color: hsla(179, 62%, 43%, 0.699);
+  color: white;
+}
+
+.why_us p {
+  font-size: 1rem;
+  line-height: 0.15;
+  color: rgba(255, 255, 255, 0.705);
+}
+
+@media screen {
+  body {
+    max-width: 650px;
+    margin: auto;
+  }
+  .container {
+    display: grid;
+  }
+
+  .sub_container {
+    grid-column: 1 / span 2;
+    justify-content: center;
+  }
+
+  .cost {
+    padding: 1em 2em;
+  }
+
+  .why_us {
+    padding: 30px;
+  }
+}
